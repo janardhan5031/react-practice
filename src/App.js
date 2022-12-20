@@ -6,6 +6,7 @@ import './App.css';
 import MoviesApp from './components/MoviesApp/MoviesApp';
 
 function App() {
+  console.log('app component')
   return (
     <>
       {/* <Grid /> */}

@@ -1,12 +1,11 @@
-
+import MovieItem from "./MovieItems";
 
 
 const MoviesList = (props) => {
 
+    
     const list = props.list.map((movie) => {
-        return <li key={movie.id}>
-            <p>{ movie.name}</p>
-        </li>
+        return <MovieItem key={movie.id} movie={movie} onDelete={ props.onDelete} />
     })
     
     return <ul>
